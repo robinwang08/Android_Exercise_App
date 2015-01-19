@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Add MapFragment here -->
+    <!-- Skeleton -->
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <!-- Add buttons here -->
+    <!-- Skeleton -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="5dp" >
+
+        <Button
+            android:id="@+id/btnMapSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:onClick="onSaveClicked"
+            android:text="@string/ui_button_save_title" />
+
+        <Button
+            android:id="@+id/btnMapCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onCancelClicked"
+            android:text="@string/ui_button_cancel_title" />
+    </LinearLayout>
+
+    <!-- Add stats TextView widgets here -->
+    <!-- Skeleton -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/statsType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="5dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/statsSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="5dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/statsCurSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="5dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/statsClimb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="5dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/statsCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="5dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/statsDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_margin="5dp" >
+        </TextView>
+    </LinearLayout>
+
+</FrameLayout>
